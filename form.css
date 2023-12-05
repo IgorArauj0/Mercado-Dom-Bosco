@@ -1,0 +1,118 @@
+/* Configurações padrão para início da Estilização */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+
+/* Aqui colocarmos estilização no corpo da página (Body) */
+body{
+    width: 100%; /* Largura */
+    height: 100vh; /* Tamanho   */
+    background-image: url(img/img-footer.jpg); /* Aqui inserimos a imagem */
+    background-position: center; /* Posicionamos a imagem ao centro */
+    background-repeat: no-repeat; /* Colocamos para que a img não se repita */
+    background-size: cover; /* Aqui atribuímos para que a imagem fique sobre toda nossa página */
+    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
+    align-items: center; /* Alinhar os itens para o centro */
+    justify-content: center; /* Justificar-conteúdo ao centro  */
+}
+
+
+.container { /* Aqui estamos chamando nossa Class */
+    max-width: 1280px; /* Atribuímos aqui um tamanho máximo de largura que essa Class irá exercer */
+    margin: 0 auto; /*  dizemos ao navegador que as margens superior e inferior são iguais a 0 e as da esquerda e direita são automáticas */
+}
+
+
+form{ /* Aqui chamamos nosso Form para Estilização */
+    background-color: white; /* Colocamos uma cor de fundo */
+    max-width: 500px; /* Atribuímos aqui um tamanho máximo de largura que esse formulário irá exercer */
+    height: 450px; /* Lagura do formulário */
+    padding: 40px; /* Preenchimento */
+    border-radius: 20px; /* Arredondamento das bordas do Formulário */
+}
+
+
+form h1{ /* Chamamos nosso Texto para estilização */
+    text-align: center; /* Alinhamos ao centro */
+    font-size: 30px; /* Tamanho da letra */
+    color: black; /* Cor da letra */
+}
+
+
+form p{ /* Chamamos nosso Paragrafo para estilização */
+    text-align: center; /* Alinhando para o centro nosso Parágrafo */
+    margin: 20px 0; /* dizemos ao navegador que as margens superior e inferior são iguais a 20 e as da esquerda e direita são 0 */
+}
+
+
+.input-single{ /* Chamamos nossa Class que está encabeçada nas Div´s dos nossos Input e Label. */
+    position: relative; /* Posição relativa  */
+    margin: 20px 0; /* dizemos ao navegador que as margens superior e inferior são iguais a 20 e as da esquerda e direita são 0 */
+}
+
+
+.input-single > label { /* Chamamos nossa Label para estilização */
+    position: absolute; /* Atribuimos uma posição absoluta em relação a o formulário */
+    left: 0; /* Zeramos a margin esquerda */
+    bottom: 5px; /* Margem inferior atribuimos para 5px */
+    transition: all 0.2s; /* Inserimos uma transição total para 0.2s */
+    cursor: text; /* Aqui é para quando passar o mouse, aparecer o indicador de texto  */
+}
+
+
+.input{ /* Aqui chamamos nosso Submit ou seja, o botão para estilização */
+    width: 100%; /* Largura */
+    border: 0; /* Tamanho da borda */
+    border-bottom: 2px solid #ccc; /* estilização da borda inferior */
+    padding: 5px; /* Preenchimento do Input */
+    font-size: 17px; /* Tamanho */
+    outline: 0; /*  */
+}
+
+
+form > .input-single > .input:focus ~ label, /*  */
+form .input-single .input:valid ~ label{ /*  */
+    transform: translateY(-25px); /*  */
+    font-size: 12px; /*  */
+    color: black; /*  */
+}
+
+
+.btn { /* Aqui estamos chamando nossa Class .btn para estilização */
+    width: 100%; /* Largura */
+    text-align: center; /* Alinhando o texto ao centro */
+}
+
+
+form input[type=submit]{ /* Aqui estilizamos nosso Botão de enviar*/
+    padding: 10px 40px; /* Preenchimento da altura e largura do botão */
+    border: 0; /* Aqui zeramos a borda */
+    border-radius: 10px; /* Colocamos aqui um arredondamento no Botão */
+    background-color: rgb(6, 63, 63); /* Cor do Botão */
+    color: rgb(255, 255, 255); /* Cor da letra (Dentro do Botão) */
+    cursor: pointer; /* Torna o botão em algo clicavel  */
+}
+
+
+.form-container {
+    opacity: 90%;
+}
+
+
+@media(max-width: 430px) {
+    .form-container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
+    form h1 {
+       font-size: 22px; 
+    }
+}

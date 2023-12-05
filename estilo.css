@@ -1,0 +1,60 @@
+* {        /*Configurações padrões de início de um projeto dentro do CSS  */
+    padding: 0;            
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    font-family: Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+body {
+    background-color: #15142b;
+    background-image: linear-gradient(180deg, #726c5b, #795a2d);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1 {
+    color: white;
+    text-shadow: 3px 3px 0px black;
+    font-size: 50px;
+}
+
+
+.text > p {
+    color: white;
+    font-size: 20px;
+}
+
+.text-js {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18rem;
+    margin-top: 15px;
+    padding: 10px 40px; /* Preenchimento da altura e largura do botão */
+    border: 0; /* Aqui zeramos a borda */
+    border-radius: 10px; /* Colocamos aqui um arredondamento no Botão */
+    background-color: rgb(187, 207, 207); /* Cor do Botão */
+    color: rgb(255, 255, 255); /* Cor da letra (Dentro do Botão) */
+    cursor: pointer; /* Torna o botão em algo clicavel  */
+}
+
+.text-js a {
+    text-decoration: none;
+    color: rgb(100, 95, 95);
+    font-size: 15px;
+}
+
+.text-js a:hover {
+    color: #15142b;
+    transition: 0.3s;
+    font-size: 18px;
+}
