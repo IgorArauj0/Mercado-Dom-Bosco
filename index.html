@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empório Padaria | Site Oficial</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -56,7 +56,7 @@
 
 
 <div id="img-destaque">
-    <div class="img-padaria"></div>
+    <div class="img-padaria efeito-img-topo"></div>
 </div>
 
 
@@ -67,7 +67,7 @@
 
 
 <main>
-   <section id="clients">
+   <section id="clients" class="clientes-efeito">
 
        <h2>NOSSOS CLIENTES</h2>
 
@@ -76,19 +76,19 @@
        <ul id="clients-list">
 
           <li class="clients-item">
-             <img src="img/personagem.png" alt="">
+             <img src="img/personagem.png" alt="" loading="lazy">
              <h3>Igor Oliveira</h3>
               <p>"Ótimos produtos e serviços"</p>
           </li>
 
           <li class="clients-item">
-            <img src="img/personagemfemi.png" alt="" class="img-femi">
+            <img src="img/personagemfemi.png" alt="" class="img-femi" loading="lazy">
             <h3>Isadora Martins</h3>
              <p>"Excelente preço"</p>
          </li>
 
          <li class="clients-item">
-          <img src="img/personagem.png" alt="">
+          <img src="img/personagem.png" alt="" loading="lazy">
           <h3>Samuel Rodrigues de Souza</h3>
            <p>"Pães frescos e de ótima qualidade"</p>
        </li>
@@ -97,37 +97,37 @@
 
    <div class="img-div"></div>
 
-  <section id="featured-products">
+  <section id="featured-products" class="principais-produtos">
       <h2>PRINCIPAIS PRODUTOS</h2>
       <div class="products">
          <div>
-            <img src="img/muflin.jpg" alt="" class="img-product">
+            <img src="img/muflin.jpg" alt="" class="img-product" loading="lazy">
              <h4 class="title-products">Mufflin</h4>
          </div>
          <div>
-          <img src="img/croissant.jpeg" alt="" class="img-product">
+          <img src="img/croissant.jpeg" alt="" class="img-product" loading="lazy">
            <h4 class="title-products">Croissant</h4>
          </div>
       </div>
 
        <div class="products">
          <div>
-          <img src="img/bolo.jpg" alt="" class="img-product">
+          <img src="img/bolo.jpg" alt="" class="img-product" loading="lazy">
            <h4 class="title-products">Bolos</h4>
          </div>
          <div>
-        <img src="img/bomba-chocolate.jpg" alt="" class="img-product">
+        <img src="img/bomba-chocolate.jpg" alt="" class="img-product" loading="lazy">
          <h4 class="title-products">Bomba de Chocolate</h4>
         </div>
      </div>
 
      <div class="products">
         <div>
-        <img src="img/beirute.png" alt="" class="img-product">
+        <img src="img/beirute.png" alt="" class="img-product" loading="lazy">
          <h4 class="title-products">Beirute</h4>
        </div>
        <div>
-        <img src="img/pao-de-metro.jpg" alt="" class="img-product">
+        <img src="img/pao-de-metro.jpg" alt="" class="img-product" loading="lazy">
         <h4 class="title-products">Pão de metro</h4>
       </div>
     </div>
@@ -165,22 +165,22 @@
      <ul class="contatos">
         <div>
            <li class="item-menu-footer">
-               <img src="img/icon-telephone.png" alt="">
+               <img src="img/icon-telephone.png" alt="" loading="lazy">
                 <p>(11) 4002-8922</p>
            </li>
             <li class="item-menu-footer">
-                <img src="img/icon-local.png" alt="">
+                <img src="img/icon-local.png" alt="" loading="lazy">
                 <p>Rua Professor Leonídio Alegretti, 757</p>
             </li>
         </div>
 
         <div>
           <li class="item-menu-footer">
-              <img src="img/icon-wpp.png" alt="">
+              <img src="img/icon-wpp.png" alt="" loading="lazy">
                <p>(11) 95478-8987</p>
           </li>
            <li class="item-menu-footer">
-               <img src="img/icon-instagram.png" alt="">
+               <img src="img/icon-instagram.png" alt="" loading="lazy">
                <p>@emporiopadaria</p>
            </li>
        </div>
@@ -188,5 +188,7 @@
 </footer>
 
 </body>
+
+ <script src="script.js"></script>
 
 </html>

@@ -87,6 +87,10 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
 }
 
 
+.efeito-img-topo {
+    visibility: hidden;
+}
+
 /* Diferença entre ID e Class: A diferença entre um id e uma class é que um id é usado apenas para identificar um único elemento em nosso HTML. 
 Os identificadores são usados ​​apenas quando um elemento na página precisa ter um estilo específico aplicado a ele. 
 No entanto, uma class pode ser usada para identificar mais de um elemento HTML*/
