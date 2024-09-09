@@ -83,7 +83,8 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
     padding: 20%;  /* Cuida do Preenchimento */
     background-image: url(img/padaria.webp); /* Usada para inserir imagens de fundo */
     background-position: center; /* Aqui posicionamos nossa imagem para o centro */
-    
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
