@@ -23,8 +23,8 @@ header > h1 {  /* Selecionamos aqui a cor da letra do nosso H1 ou seja, do nosso
 
 
 header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alterações*/
-    width: 200px;  /* Largura da nossa imagem */
-    height: 170px; /* Tamanho da nossa imagem */
+    width: 11rem;  /* Largura da nossa imagem */
+    height: auto; /* Tamanho da nossa imagem */
 }
 
 #menu-header { /* Nosso menu de navegação*/
@@ -294,12 +294,101 @@ footer > h2 {  /* */
 
 
 
-@media (max-width: 700px) {
-
+.navbar {
+    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
 }
 
 
- 
+.logo {
+    font-size: 24px;
+}
+
+
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a,
+.nav-links-mobile a {
+    color: white;
+    text-decoration: 0.3s;
+}
+
+.nav-links a:hover {
+    color: green;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+    width: 0%;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links-mobile li {
+    border-bottom: 1px solid #787272;
+    padding-bottom: 1.2rem;
+}
+
+
+
+
+.hamburger,
+.close {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+.close {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: block;
+    align-self: end;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+
 
 
 
@@ -308,7 +397,7 @@ footer > h2 {  /* */
         display: none;
     }
   
-    #btn-header button a {
+    /* #btn-header button a {
         display: block;
         font-family: bold;
     }
@@ -323,11 +412,11 @@ footer > h2 {  /* */
     width: 30%;
     color: aliceblue;
     height: auto;
-    }
+    } */
 
 
     header img {
-    width: 40px;
+    width: 30px;
     height: 40px;
     }
 
@@ -442,3 +531,64 @@ footer > h2 {  /* */
     }
 
 } 
+
+
+@media (max-width: 700px) {
+
+}
+
+
+
+@media(max-width: 834px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    /* header img {
+        width: 10rem;
+        height: auto;
+        } */
+
+
+        header img {
+            width: 4em;
+            height: auto;
+            }
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        
+    }
+
+    .mobile-menu {
+        z-index: 999;
+    }
+
+    #btn-header {
+       display: none;
+    }
+
+
+
+
+
+    .cad-mobile button {
+        width: 14rem;
+        height: 4rem;
+        border-radius: 5px;
+        background-color: #f8f4f46c;
+        color: #000000;
+    }
+
+
+
+    .cad-mobile button a {
+        text-decoration: none;
+        color: white;
+
+    }
+}

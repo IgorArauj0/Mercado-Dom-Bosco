@@ -2,197 +2,318 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empório Padaria | Site Oficial</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empório Padaria | Site Oficial</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://kit.fontawesome.com/5729e0ff2e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-       <img src="img/tangirina.png" alt="">
 
-       <h1>EMPÓRIO PADARIA</h1>
+    <img src="img/tangirina.png" alt="ícone tangirina">
 
-       <nav id="menu-header">
+    <h1>EMPÓRIO PADARIA</h1>
 
-         <ul id="list-menu">
+    <!-- <nav id="menu-header">
 
-            <li class="item-menu-header">
-              <a href="index.html">HOME</a>
-            </li>
+      <ul id="list-menu">
 
-            <li class="item-menu-header">
-              <a href="#featured-products">PRODUTOS</a>
-            </li>
-            
-            <li class="item-menu-header">
-              <a href="#contatos">CONTATO</a>
-            </li>
+        <li class="item-menu-header">
+          <a href="index.html">HOME</a>
+        </li>
 
-            <li class="item-menu-header">
-              <a href="#sobre-nos">SOBRE NÓS</a>
-            </li>
+        <li class="item-menu-header">
+          <a href="#featured-products">PRODUTOS</a>
+        </li>
 
-         </ul>
-        </nav>
-       <div id="btn-header">
-          <button>
+        <li class="item-menu-header">
+          <a href="#contatos">CONTATO</a>
+        </li>
+
+        <li class="item-menu-header">
+          <a href="#sobre-nos">SOBRE NÓS</a>
+        </li>
+
+      </ul>
+    </nav> -->
+
+    <!-- Criamos nosso menu de Navegação -->
+    <nav class="navbar">
+
+      <!-- Criamos nossa caixa (DIV) para guardar os elementos do Header quando estiver em modo Desktop -->
+      
+      
+
+
+      <!-- Criamos nossas Listas quando tiver em formato Desktop -->
+      <ul class="nav-links">
+
+        <li class="item-menu-header">
+          <a href="index.html">HOME</a>
+        </li>
+
+        <li class="item-menu-header">
+          <a href="#featured-products">PRODUTOS</a>
+        </li>
+
+          <li class="item-menu-header">
+            <a href="#contatos">CONTATO</a>
+          </li>
+
+          <li class="item-menu-header">
+            <a href="#sobre-nos">SOBRE NÓS</a>
+          </li>
+          
+      </ul>
+
+
+
+      <!-- Criamos nossa caixa (DIV) para guardar os elementos do Hamburguer quando estiver aberto -->
+      <div class="mobile-menu" id="mobileMenu">
+
+          <!-- Botão para ser utilizado para fechamento da lista -->
+          <button id="closeButton" class="close">
+              <i class="fas fa-times"></i>
+          </button>
+
+          <!-- Essa lista é do Menu Hamburguer quando estiver aberto. -->
+          <ul class="nav-links-mobile">
+              <li>
+                  <a href="">TESTE</a>
+              </li>
+              <li>
+                  <a href="">TESTE</a>
+              </li>
+              <li>
+                  <a href="">TESTE</a>
+              </li>
+          </ul>
+
+
+          <div id="btn-mobile" class="cad-mobile">
+            <button>
               <a href="form.html" target="_blank">
-                
-                <img src="img/user.png" alt="">
-
+      
+                <!-- <img src="img/user.png" alt=""> -->
+      
                 <p>Cadastre-se</p>
               </a>
-          </button>
+            </button>
+          </div>
+
+          <!-- Fim da caixa do Menu Hamburguer (Quando estiver aberto) -->
+      </div>
+
+      <!-- Botão de Hamburguer, ele está fora da Div justamente por ser um elemento singular -->
+    <button class="hamburger" id="hamburgerButton">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Fim do Menu de Navegação -->
+  </nav>
+
+
+    <div id="btn-header">
+      <button>
+        <a href="form.html" target="_blank">
+
+          <img src="img/user.png" alt="">
+
+          <p>Cadastre-se</p>
+        </a>
+      </button>
     </div>
 
-</header>
+  </header>
 
 
 
 
 
-<div id="img-destaque">
+  <div id="img-destaque">
     <div class="img-padaria efeito-img-topo"></div>
-</div>
+  </div>
 
 
 
-<div class="img-div"></div>
+  <div class="img-div"></div>
 
 
 
 
-<main>
-   <section id="clients" class="clientes-efeito">
+  <main>
+    <section id="clients" class="clientes-efeito">
 
-       <h2>NOSSOS CLIENTES</h2>
+      <h2>NOSSOS CLIENTES</h2>
 
-       <hr class="line">
+      <hr class="line">
 
-       <ul id="clients-list">
+      <ul id="clients-list">
 
-          <li class="clients-item">
-             <img src="img/personagem.png" alt="" loading="lazy">
-             <h3>Igor Oliveira</h3>
-              <p>"Ótimos produtos e serviços"</p>
-          </li>
+        <li class="clients-item">
+          <img src="img/personagem.png" alt="" loading="lazy">
+          <h3>Igor Oliveira</h3>
+          <p>"Ótimos produtos e serviços"</p>
+        </li>
 
-          <li class="clients-item">
-            <img src="img/personagemfemi.png" alt="" class="img-femi" loading="lazy">
-            <h3>Isadora Martins</h3>
-             <p>"Excelente preço"</p>
-         </li>
+        <li class="clients-item">
+          <img src="img/personagemfemi.png" alt="" class="img-femi" loading="lazy">
+          <h3>Isadora Martins</h3>
+          <p>"Excelente preço"</p>
+        </li>
 
-         <li class="clients-item">
+        <li class="clients-item">
           <img src="img/personagem.png" alt="" loading="lazy">
           <h3>Samuel Rodrigues de Souza</h3>
-           <p>"Pães frescos e de ótima qualidade"</p>
-       </li>
-       </ul>
-   </section>
+          <p>"Pães frescos e de ótima qualidade"</p>
+        </li>
+      </ul>
 
-   <div class="img-div"></div>
+    </section>
 
-  <section id="featured-products" class="principais-produtos">
+    <div class="img-div"></div>
+
+
+
+
+
+    <section id="featured-products" class="principais-produtos">
+
       <h2>PRINCIPAIS PRODUTOS</h2>
+
       <div class="products">
-         <div>
-            <img src="img/muflin.jpg" alt="" class="img-product" loading="lazy">
-             <h4 class="title-products">Mufflin</h4>
-         </div>
-         <div>
-          <img src="img/croissant.jpeg" alt="" class="img-product" loading="lazy">
-           <h4 class="title-products">Croissant</h4>
-         </div>
-      </div>
 
-       <div class="products">
-         <div>
-          <img src="img/bolo.jpg" alt="" class="img-product" loading="lazy">
-           <h4 class="title-products">Bolos</h4>
-         </div>
-         <div>
-        <img src="img/bomba-chocolate.jpg" alt="" class="img-product" loading="lazy">
-         <h4 class="title-products">Bomba de Chocolate</h4>
-        </div>
-     </div>
-
-     <div class="products">
         <div>
-        <img src="img/beirute.png" alt="" class="img-product" loading="lazy">
-         <h4 class="title-products">Beirute</h4>
-       </div>
-       <div>
-        <img src="img/pao-de-metro.jpg" alt="" class="img-product" loading="lazy">
-        <h4 class="title-products">Pão de metro</h4>
+          <img src="img/muflin.jpg" alt="" class="img-product" loading="lazy">
+          <h4 class="title-products">Mufflin</h4>
+        </div>
+
+        <div>
+          <img src="img/croissant.jpeg" alt="" class="img-product" loading="lazy">
+          <h4 class="title-products">Croissant</h4>
+        </div>
+
       </div>
-    </div>
-   
-    <a href="products.html">
-      ver tudo
-    </a>
 
-</section>
 
-<section id="sobre-nos">
-    <h3>SOBRE NÓS</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
-      libero neque, lacinia sed ex id, egestas scelerisque elit. Nullam 
-      commodo, justo non aliquet mollis, mauris nunc hendrerit nisl, 
-      rhoncus aliquam magna nunc sed felis. Etiam quis velit at ante tempus bibendum. Ut dapibus consequat neque, et varius erat condimentum at. Mauris finibus porta nibh, et feugiat urna sodales non. Nam tristique, mi condimentum condimentum euismod, libero odio maximus velit, sed placerat nibh leo tristique massa. Sed tincidunt condimentum fermentum. Sed at metus vitae nisi sagittis venenatis. Donec id risus leo.
-      Nullam facilisis risus auctor ante sollicitudin aliquet<br>
-    
-      <p>Estibulum molestie ligula sit amet purus congue, in tristique metus rutrum. Aenean porta volutpat lacus, nec fringilla augue porttitor et. Pellentesque sit amet justo neque. Quisque a dapibus purus. Etiam feugiat massa quis lectus pellentesque pretium. Nam blandit mi metus, et lacinia neque porttitor sed. Aenean vitae lectus urna. Quisque eu enim elit. Sed ornare sollicitudin magna a varius. 
+
+
+      <div class="products">
+
+        <div>
+          <img src="img/bolo.jpg" alt="" class="img-product" loading="lazy">
+          <h4 class="title-products">Bolos</h4>
+        </div>
+
+        <div>
+          <img src="img/bomba-chocolate.jpg" alt="" class="img-product" loading="lazy">
+          <h4 class="title-products">Bomba de Chocolate</h4>
+        </div>
+
+      </div>
+
+
+
+
+      
+      <div class="products">
+
+        <div>
+          <img src="img/beirute.png" alt="" class="img-product" loading="lazy">
+          <h4 class="title-products">Beirute</h4>
+        </div>
+
+        <div>
+          <img src="img/pao-de-metro.jpg" alt="" class="img-product" loading="lazy">
+          <h4 class="title-products">Pão de metro</h4>
+        </div>
+
+      </div>
+
+      <a href="products.html">
+        ver tudo
+      </a>
+
+    </section>
+
+    <section id="sobre-nos">
+
+      <h3>SOBRE NÓS</h3>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+        libero neque, lacinia sed ex id, egestas scelerisque elit. Nullam
+        commodo, justo non aliquet mollis, mauris nunc hendrerit nisl,
+        rhoncus aliquam magna nunc sed felis. Etiam quis velit at ante tempus bibendum. Ut dapibus consequat neque, et
+        varius erat condimentum at. Mauris finibus porta nibh, et feugiat urna sodales non. Nam tristique, mi
+        condimentum condimentum euismod, libero odio maximus velit, sed placerat nibh leo tristique massa. Sed tincidunt
+        condimentum fermentum. Sed at metus vitae nisi sagittis venenatis. Donec id risus leo.
+        Nullam facilisis risus auctor ante sollicitudin aliquet<br>
+
+      <p>Estibulum molestie ligula sit amet purus congue, in tristique metus rutrum. Aenean porta volutpat lacus, nec
+        fringilla augue porttitor et. Pellentesque sit amet justo neque. Quisque a dapibus purus. Etiam feugiat massa
+        quis lectus pellentesque pretium. Nam blandit mi metus, et lacinia neque porttitor sed. Aenean vitae lectus
+        urna. Quisque eu enim elit. Sed ornare sollicitudin magna a varius.
         Sed nec lacus id elit molestie rutrum ut et neque.
-        Pulvinar in metus sit amet ultricies. Proin posuere rutrum mi. Phasellus turpis turpis, placerat ac sem non, elementum bibendum quam. Nullam varius nunc a lectus consectetur auctor. Aenean luctus sagittis ex, at pharetra dolor ultricies ac. Morbi sed tristique quam. Nulla facilisi. Proin volutpat, mi nec varius laoreet, leo sem congue nunc, id lobortis justo metus nec lectus.
+        Pulvinar in metus sit amet ultricies. Proin posuere rutrum mi. Phasellus turpis turpis, placerat ac sem non,
+        elementum bibendum quam. Nullam varius nunc a lectus consectetur auctor. Aenean luctus sagittis ex, at pharetra
+        dolor ultricies ac. Morbi sed tristique quam. Nulla facilisi. Proin volutpat, mi nec varius laoreet, leo sem
+        congue nunc, id lobortis justo metus nec lectus.
       </p>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Quia saepe, illo ex blanditiis dolorem dicta non doloremque, 
-        autem temporibus deserunt quos! 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Quia saepe, illo ex blanditiis dolorem dicta non doloremque,
+        autem temporibus deserunt quos!
         Ab debitis inventore ad repudiandae, fuga odio qui quas.</p>
- </section>
-</main>
-       
 
-<footer id="contatos">
-     <h2>CONTATOS</h2>
-     <ul class="contatos">
-        <div>
-           <li class="item-menu-footer">
-               <img src="img/icon-telephone.png" alt="" loading="lazy">
-                <p>(11) 4002-8922</p>
-           </li>
-            <li class="item-menu-footer">
-                <img src="img/icon-local.png" alt="" loading="lazy">
-                <p>Rua Dom Bosco, 757</p>
-            </li>
-        </div>
+    </section>
 
-        <div>
-          <li class="item-menu-footer">
-              <img src="img/icon-wpp.png" alt="" loading="lazy">
-               <p>(11) 90000-0050</p>
-          </li>
-           <li class="item-menu-footer">
-               <img src="img/icon-instagram.png" alt="" loading="lazy">
-               <p>@emporiopadaria</p>
-           </li>
-       </div>
-     </ul>
-</footer>
+  </main>
+
+
+  <footer id="contatos">
+
+    <h2>CONTATOS</h2>
+
+    <ul class="contatos">
+
+      <div>
+        <li class="item-menu-footer">
+          <img src="img/icon-telephone.png" alt="" loading="lazy">
+          <p>(11) 4002-8922</p>
+        </li>
+        <li class="item-menu-footer">
+          <img src="img/icon-local.png" alt="" loading="lazy">
+          <p>Rua Dom Bosco, 757</p>
+        </li>
+      </div>
+
+      <div>
+        <li class="item-menu-footer">
+          <img src="img/icon-wpp.png" alt="" loading="lazy">
+          <p>(11) 90000-0050</p>
+        </li>
+        <li class="item-menu-footer">
+          <img src="img/icon-instagram.png" alt="" loading="lazy">
+          <p>@emporiopadaria</p>
+        </li>
+      </div>
+
+    </ul>
+
+  </footer>
 
 </body>
 
 
- <script src="script.js"></script>
+<script src="script.js"></script>
 
- <div vw class="enabled">
+
+<div vw class="enabled">
   <div vw-access-button class="active"></div>
   <div vw-plugin-wrapper>
     <div class="vw-plugin-top-wrapper"></div>
