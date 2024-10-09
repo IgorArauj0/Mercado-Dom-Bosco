@@ -6,6 +6,12 @@
     font-family: Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+
 header {
       display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
       align-items: center; /*Alinhar os itens do nosso Header para o centro*/
@@ -18,24 +24,15 @@ header {
 
 header > h1 {  /* Selecionamos aqui a cor da letra do nosso H1 ou seja, do nosso título */
     color: white; /* chamamos a propriedade color e definimos uma cor em questão */ 
-    font-size: 45px;
+    font-size: 45px; /*Tamanho da letra*/
 }
 
 
 header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alterações*/
     width: 11rem;  /* Largura da nossa imagem */
-    height: auto; /* Tamanho da nossa imagem */
+    height: auto; /* Tamanho da nossa imagem no tamanho automático*/
 }
 
-#menu-header { /* Nosso menu de navegação*/
-    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
-    align-items: center; /* Alinhar os itens do nosso Header para o centro */
-}
-
-#list-menu {  /* Nossa lista não ordenada, aqui mudaremos diretamente nossa lista */
-    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
-    margin-right: 1rem; /* margem da direita. 1 REM equivale a 16px, ou seja podemos usa-lo para facilitar a inserção de PX*/
-}
 
 .item-menu-header { /* Nossas li que estão dentro do LIST MENU, onde se encontram os nomes dos itens apresentados no HEADER */
     margin-right: 25px; /* margem da direita */
@@ -49,8 +46,106 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
 .item-menu-header > a { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO */
     color: white; /* Cor das letras */
     text-decoration: none; /* Responsável por tirar o sublinhado inferior que estava visível */
-    font-size: 12px; /* Tamanho da letra */
+    font-size: 0.8em; /* Tamanho da letra */
 } 
+
+
+.navbar {
+    color: white; /*Cor da letra*/
+    display: flex; /*Flexíveis*/
+    justify-content: space-between; /*A distribuição dos itens sejam com Space-between*/
+    align-items: center; /*Alinhamento da vertical*/
+    padding: 1rem 1.5rem; /*Preenchimento superior/inferior e esquerda/direita*/
+    height: 2.6rem; /*Altura do NavBar*/
+}
+
+.nav-links { /*Aqui estamos estilizando a UL (lista não ordenada)*/
+    list-style: none; /*Retirando o estilo de lista*/ 
+    display: flex; /*Tornando a caixa flexível, e lado a lado*/
+    margin: 0; /*Zerando os espaços de margem que são habilitados por padrão*/
+    padding: 0; /*Zerando os preenchimentos que são habilitados por padrão*/
+}
+
+
+.nav-links li { /*Estilizando nossa LI que está dentro da UL*/
+    padding: 0 8px; /*Preenchimento da LI superior/inferior 0 e laterais em 9px*/
+}
+
+.nav-links a,
+.nav-links-mobile a { /*Estamos chamando as duas âncoras para estilização, tanto da Versão Desktop quanto da versão Mobile.*/
+    color: white; /*A cor da letra*/
+    text-decoration: none; /*E sem sublinhado*/
+}
+
+
+
+.mobile-menu { /*Estilização da caixa Mobile quando aberta*/
+    display: none; /*Display: Nenhum*/
+    position: fixed; /*Posição fixa na parte direita da página*/
+    top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
+    right: 0; /*Direita em 0 fazendo a caixa encostar a direita*/
+    width: 60%; /*Largura em porcentagem da caixa*/
+    height: 100%; /*Altura de 100% da tela*/
+    background-color: rgb(0, 0, 0); /*Cor de fundo*/
+    flex-direction: column; /*direção dos itens dentro da caixa */
+    align-items: center; /*Alinhamento na vertical do itens*/
+    font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
+}
+
+.nav-links-mobile { /*Lista não ordenada da versão mobile*/
+    display: flex; /*Tornando os itens (LISTAS) flexíveis*/
+    flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
+    text-align: end; /*Alinhando o texto ao centro*/
+    gap: 1.2rem; /*Espaço entre as listas */
+    /* width: 0%; Zeramos a largura podendo retirar essa linha para testar visualizão */
+    list-style: none; /*Estilo de lista desabilitado*/
+    /* padding: 0; Preenchimento zerado, podendo também ser retirado para testes */
+}
+
+.nav-links-mobile li { /*listas da versão Mobile*/
+    border-bottom: 1px solid #787272; /*Bordar inferior de cada lista*/
+    padding-bottom: 1.2rem; /*Tamanho da borda*/
+}
+
+
+
+
+.hamburger,
+.close {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+.close {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: block;
+    align-self: end;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #btn-header {   /*Nossa ID do Botão de Login */
     display: flex; /*  Resposável por colocar os itens na mesma linha (lado a lado) */
@@ -294,98 +389,6 @@ footer > h2 {  /* */
 
 
 
-.navbar {
-    
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    height: 50px;
-}
-
-
-.logo {
-    font-size: 24px;
-}
-
-
-
-.nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-
-.nav-links li {
-    padding: 0 15px;
-}
-
-.nav-links a,
-.nav-links-mobile a {
-    color: white;
-    text-decoration: 0.3s;
-}
-
-.nav-links a:hover {
-    color: green;
-}
-
-.mobile-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 60%;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.8rem;
-}
-
-.nav-links-mobile {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1.2rem;
-    width: 0%;
-    list-style: none;
-    padding: 0;
-}
-
-.nav-links-mobile li {
-    border-bottom: 1px solid #787272;
-    padding-bottom: 1.2rem;
-}
-
-
-
-
-.hamburger,
-.close {
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    display: none;
-}
-
-
-.close {
-    margin-top: 20px;
-    margin-right: 20px;
-    display: block;
-    align-self: end;
-}
-
-
-.flex {
-    display: flex;
-}
 
 
 
@@ -571,9 +574,6 @@ footer > h2 {  /* */
     #btn-header {
        display: none;
     }
-
-
-
 
 
     .cad-mobile button {
