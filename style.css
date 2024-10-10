@@ -160,22 +160,24 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
 #btn-header > button > a { /* Estamos chamando aqui nossa TAG de Link para alteração. */ 
     display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado)  */
     align-items: center; /* Alinhar os itens para o centro */
-}
-
-#btn-header > button > a > img { /* Aqui estamos mexendo nO ICON do botão*/
-    width: 30px; /* Largura */
-    height: 30px; /* Tamanho */
-    margin-right: 2px; /* margem da direita */
-}
-
-#btn-header > button > a { /* Estamos chamando aqui nossa TAG de Link para alteração (NOVAMENTE) */
+    gap: 5px;
     color: white; /*Cor da letra */
     text-decoration: none; /* Responsável por tirar o sublinhado que estava visível */
     font-weight: 400; /* espessura da fonte */
 }
 
+#btn-header > button > a > img { /* Aqui estamos mexendo nO ICON do botão*/
+    width: 1.8rem; /* Largura */
+    height: auto; /* Tamanho */
+}
+
+
+
+
+
+
 .img-padaria { /* Aqui chamamos a ID que chamamos no HTML*/
-    padding: 20%;  /* Cuida do Preenchimento */
+    padding: 21%;  /* Cuida do Preenchimento */
     background-image: url(img/padaria.webp); /* Usada para inserir imagens de fundo */
     background-position: center; /* Aqui posicionamos nossa imagem para o centro */
     background-size: cover;
@@ -187,9 +189,6 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
     visibility: hidden;
 }
 
-/* Diferença entre ID e Class: A diferença entre um id e uma class é que um id é usado apenas para identificar um único elemento em nosso HTML. 
-Os identificadores são usados ​​apenas quando um elemento na página precisa ter um estilo específico aplicado a ele. 
-No entanto, uma class pode ser usada para identificar mais de um elemento HTML*/
 
 
 
@@ -199,6 +198,14 @@ No entanto, uma class pode ser usada para identificar mais de um elemento HTML*/
     background-position: center; /* Aqui posicionamos nossa imagem para o centro */ 
     background-size: auto; /* Background-Size: especifica o tamanho das imagens de fundo. Auto: Responsável por preencher totalmente a imagem. */
 }
+
+
+
+
+
+
+
+
 
 main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     margin-top: 0px; /*  indica o espaço acima do elemento / superior */
@@ -231,16 +238,19 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     margin-top: 30px; /* indica o espaço acima do elemento / superior */
 }
 
+
+
+
 .clients-item { /* Aqui chamamos nossa Class que está dentro da nossa ID */
     display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
     justify-content: center; /* Justificar-conteúdo no centro*/
     align-items: center; /* Alinhar os itens para o centro */
-    flex-direction: column; /* */
+    flex-direction: column; /* Direção das caixas*/
 }
 
 .clients-item > img { /* Aqui chamamos nossa Tag IMG para estilização*/
-    width: 84px; /* Lagura */
-    height: 84px; /* Tamanho */
+    width: 4.3rem; /* Lagura */
+    height: 4rem; /* Tamanho */
 }
 
 
@@ -253,11 +263,11 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     margin-top: 10px; /* indica o espaço acima do elemento / superior */
 }
 
-#clients .img-femi{
+/* #clients .img-femi{
    width: 25%;
    height:auto;
    margin-bottom: 1.2em;     
-}
+} */
 
 
 .clients-item > p { /* Aqui chamamos nossa TAG P para estilização*/
@@ -280,8 +290,8 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
 }
 
 .img-product { /* Class inserida nas nossas tags IMG */
-    width: 300px; /* Largura */
-    height: 300px; /* Tamanho */
+    width: 21rem; /* Largura */
+    height: 21rem; /* Tamanho */
     border-radius: 50px; /* Estilo arredondado das bordas */
 }
 
@@ -295,7 +305,7 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
 #featured-products > a { /* Aqui estamos chamando nossa TAG de link para estilização */
     text-decoration: none; /* Aqui desabilitamos com o none qualquer sublinado que tenha dentro da nossa TAG "a" */
     font-family: 'Ubuntu', 'sans-serif'; /* Fonte selecionada */
-    font-size: 20px; /* Tamanho da letra */
+    font-size: 1.6rem; /* Tamanho da letra */
     color: red; /* Cor da Letra */
     display: flex;
     justify-content: center;
@@ -303,7 +313,7 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
 
 #featured-products > a:hover { /* Aqui estamos chamando novamente nossa TAG de link para colocar um efeito Hover nela */
     text-decoration: underline; /* Aqui chamamos o text decoration para colocar uma decoração ao passar do cursos underline serve como um sublinhado em baixo do nome*/
-    font-size: 22px; /* Tamanho da letra ao passar o cursor em cima */
+    font-size: 1.8rem; /* Tamanho da letra ao passar o cursor em cima */
     transition: 1s; /* O tempo que será realizado esta ação */
 }
 
