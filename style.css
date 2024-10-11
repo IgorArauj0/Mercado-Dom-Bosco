@@ -107,40 +107,28 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
     padding-bottom: 1.2rem; /*Tamanho da borda*/
 }
 
-
-
-
 .hamburger,
-.close {
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    display: none;
+.close { /*Estilizando os botões de abertura e fechamento*/
+    font-size: 24px; /*Tamanho do elemento*/
+    background: none; /*Removido o Background*/
+    border: none; /*BORDA NENHUMAAAAAAA*/
+    color: white; /*cor do elemento*/
+    cursor: pointer; /*Cursor Habilitado*/
+    display: none; /*Escondendo os botões*/
 }
 
 
 .close {
-    margin-top: 20px;
-    margin-right: 20px;
-    display: block;
-    align-self: end;
+    margin-top: 20px;/*Espaçamento superior do X */
+    margin-right: 20px; /*Espaçamento a direita do X*/
+    display: block; /*Formatação da Imagem em bloco*/
+    align-self: end; /*Alinhamento do botão*/
 }
 
 
-.flex {
-    display: flex;
+.flex { /*ELEMENTO USADO NO JS*/
+    display: flex; /*Tornando item flexível e visível.*/
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -568,13 +556,13 @@ footer > h2 {  /* */
             width: 4em;
             height: auto;
             }
+            
     .nav-links {
         display: none;
     }
 
     .hamburger {
         display: block;
-        
     }
 
     .mobile-menu {
